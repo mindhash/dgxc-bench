@@ -1,0 +1,6 @@
+data/verified_10K_document_text_document.bin
+data/verified_10K_document_text_document.idx
+data/*
+*.out
+workload_8b/*
+workload_70b/*
