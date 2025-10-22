@@ -21,6 +21,7 @@ We will use this model as tokenizer. Confirm it is available in `/pfs/hf/hub/mod
 $ cd /pfs
 $ git clone https://github.com/mindhash/dgxc-bench
 $ mv dgxc-bench e2e_perf
+$ cd e2e_perf
 ```
 
 4. Run the following
