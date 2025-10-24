@@ -24,7 +24,17 @@ $ mv dgxc-bench e2e_perf
 $ cd e2e_perf
 ```
 
-4. Run the following
+4. Get the list of infiniband ports:
+```
+$ sudo apt update
+$ sudo apt install ibverbs-utils libibverbs-dev libibumad3 libibumad-dev librdmacm-dev rdmacm-utils infiniband-diags ibverbs-utils
+$ ibstat
+# From the ibstat output, list out the infiniband ports
+$ export NCCL_IB_HCA=mlx5_0,mlx5_9,mlx5_6,mlx5_5,mlx5_4,mlx5_3,mlx5_11,mlx5_10
+```  
+5. Run the following
+Note: You may have to edit `configure.sh` (from this repo) to correct IB ports if they are different from previous step.
+
 ```
 $ export NEMORUN_HOME=/pfs/nemorun_home
 $ export HOME=/home/admin
