@@ -28,7 +28,7 @@ $ cd e2e_perf
 ```
 $ sudo apt update
 $ sudo apt install ibverbs-utils libibverbs-dev libibumad3 libibumad-dev librdmacm-dev rdmacm-utils infiniband-diags ibverbs-utils
-$ ibstat
+$ ibv_devinfo 
 # From the ibstat output, list out the infiniband ports
 $ export NCCL_IB_HCA=mlx5_0,mlx5_9,mlx5_6,mlx5_5,mlx5_4,mlx5_3,mlx5_11,mlx5_10
 ```  
