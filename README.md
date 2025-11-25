@@ -38,6 +38,7 @@ Note: You may have to edit `configure.sh` (from this repo) to correct IB ports i
 ```
 $ export NEMORUN_HOME=/pfs/nemorun_home
 $ export HOME=/home/admin
+$ export NUM_NODES=4
 $ NEMO_LOG_TRAIN_LOSS=1 NEMO_LOG_MEMORY_USAGE=1 STAGE_PATH=/pfs/e2e_perf/workload_8b   DTYPE=bf16 MODEL_SIZE=8b sbatch -A ${SLURM_ACCOUNT} -p ${SLURM_PARTITION} -N ${NUM_NODES} ./launch.sh
 
 ```
